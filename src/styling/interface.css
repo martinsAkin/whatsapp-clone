@@ -1,0 +1,239 @@
+:root{
+ --primaryColor: rgb(8, 7, 7);
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ user-select: none;
+}
+@media (min-width: 320px) and (max-width: 599px) {
+ .svg{
+  height: 1.5rem
+ }
+ .FooterSvg{
+  height: 2.5rem;
+ }
+ #userInterface{
+  margin-bottom: 5rem;
+  background-color: var(--primaryColor);
+  color: white;
+ }
+ #headbar-nav, #statusBar, #communityBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: var(--primaryColor);
+  width: 100dvw;
+
+  #headbarIcons{
+   display: flex;
+   gap: 1rem;
+  }
+ }
+ .uil{
+  font-size: large;
+ }
+
+ #footer{
+  background-color: var(--primaryColor);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100dvw;
+  /* height: 4rem; */
+  padding: 0.7rem 0.3rem;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+
+ }
+ #footerIcon{
+  display: flex;
+  flex-direction: column;
+  text-wrap: wrap;
+
+  /* color: white; */
+ }
+ #footer a{
+  color: azure;
+  text-decoration: none;
+ }
+ #footer .active{
+  color: green;
+  font-weight: bold;
+ }
+ #searchChat{
+  width: 90%;
+  /* margin-top: 2rem; */
+  margin: 5rem 1rem 0 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(49, 48, 48);
+  color: rgb(223, 206, 206);
+  padding: 1rem;
+ }
+ #archive{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  /* width: 100dvw; */
+
+  &:hover{
+   background-color: grey;
+  }
+ }
+ .directMessages{
+  width: 100%;
+  /* padding-left: 1rem; */
+
+  .messages{
+   padding: 1rem;
+   margin: 0 -1rem 0 0;
+   display: flex;
+   width: 100dvw;
+   gap: 10px;
+   align-items: center;
+
+   #profilePic{
+    border-radius: 50%;
+    height: 3rem;
+   }
+
+   &:hover{
+    background-color: grey;
+   }
+  }  
+ }
+ .unread{
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.4rem;
+ }
+ .addNewIcon{
+  padding: 1rem;
+  position: sticky;
+  background-color: green;
+  border-radius: 10px;
+  width: 5rem;
+  bottom: 7rem;
+  left: 18rem;
+ }
+
+ /* status page styling */
+ #statusPage, #community, #calls{
+  padding-bottom: 5rem;
+  color: white;
+  background-color: black;
+  /* height: 100dvh; */
+ }
+
+ #statusIcons{
+  display: flex;
+  gap: 2rem;
+ }
+ #statusList{
+  padding: 5rem 0.5rem 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  overflow: scroll;
+ }
+ .statusRing{
+  border: 5px dashed green;
+  border-radius: 50%;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+ }
+ .button{
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border: none;
+  background-color: rgb(39, 36, 36);
+  color: white;
+  border-radius: 20px;
+ }
+ #channels{
+  display: flex;
+  flex-direction: column;
+ }
+ .channel-List, .community-List, #call-list{
+  display: flex;
+  width: 100dvw;
+  padding: 1rem;
+  gap: 0.5rem;
+
+  &:hover{
+   background-color: grey;
+  }
+ }
+
+ /* community */
+ #addNewCommunity{
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-left: 0.5rem; 
+  margin-top: 4.5rem;
+  align-items: center;
+
+  &:hover{
+   background-color: grey;
+  }
+ }
+ #communitySection{
+  padding: 1.5rem, 1rem;
+  margin-top: 1rem;
+ }
+ .viewAll{
+  padding: 1rem;
+ }
+
+ /* call page */
+ #calls{
+  padding-top: 5rem;
+  /* padding-bottom: 6rem; */
+ }
+ #call-list{
+  align-items: center;
+  justify-content: space-between;
+ }
+ .menu-popUp{
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  background-color: black;
+  color: white;
+
+  ul{
+   list-style: none;
+
+   li{
+    padding: 0.5rem;
+
+    &:hover{
+     background-color: white;
+     color: black;
+    }
+   }
+  }
+ }
+
+}
