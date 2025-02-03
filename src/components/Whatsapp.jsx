@@ -64,13 +64,13 @@ export function Chats({profileUrl, contactName, time = "7:00am", unread = '2', c
     
     <div className="messages">
        <img src={profileUrl} id='profilePic' alt="user" />
-       <div>
-         <div style={{display: 'flex', paddingBottom: '0.5rem', width: '18.5rem', justifyContent: 'space-between'}}>
+       <div className='details'>
+         <div className='nameTimeFlexContainer'>
           <div>{contactName}</div>
           <div>{time}</div>
           </div>
 
-         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+         <div className='nameTimeFlexContainer'>
             <div>{children}</div>
             <div className="unread">{unread}</div>
           </div>

@@ -15,52 +15,6 @@ import missedCall from '../assets/images/arrow-down-left (1).svg'
 import { useState } from 'react'
 import addCall from '../assets/images/calling.svg'
 
-// export function MenuBar({icon}){
-
-//   const [MenuBtn, setMenuBtn] = useState(false)
-
-//   const toggleMenu = () =>{
-//     setMenuBtn(!MenuBtn)
-//   }
-
-//   return(
-//     <>
-//         <div onClick={toggleMenu}>{icon}</div>
-
-//          <div style={{display: MenuBtn ? 'block' : 'none'}} className='menu-popUp'>
-//       <ul>
-//         <li>Clear call log</li>
-//         <li>Settings</li>
-//       </ul>
-//     </div> 
-
-
-//     </>
-//   )
-// }
-
-// export function HeadbarCalls({section, Headericon1}){
-//   const header = document.getElementById('headbar-nav')
-//   window.addEventListener('scroll', ()=>{
-//     if (window.scrollY > 0) {
-//       header.style.boxShadow = '0 4px 6px rgba(8, 8, 8, 0.89)';
-//     } else{
-//       header.style.boxShadow = 'none'
-//     }
-//   })
-  
-
-//  return(
-//   <div id='headbar-nav'>
-//       <div style={{fontSize: '35px'}}>{section}</div>
-//       <div id="headbarIcons">
-//          <div>{Headericon1}</div>
-//          <MenuBar icon={'menu'} />
-//       </div>
-
-//   </div>
-//  )
-// }
 
 
 export function HeadbarCalls({section}){
@@ -108,9 +62,9 @@ export function RecentCallers({callerDp, callerName, time, callType, condition =
     <div id='call-list'>
       <div style={{display: 'flex', justifyContent: "space-between", gap: '1rem', alignItems: 'center'}}>
        <img src={callerDp} id='profilePic' alt="image" />
-       <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem'}}>
+       <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem'}} className='details'>
         {callerName}
-          <div style={{display: 'flex', gap: '0.3rem'}}>
+          <div style={{display: 'flex', gap: '0.3rem'}} className='nameTimeFlexContainer'>
             <img src={condition} className='svg' alt='con' />
             <div>{time}</div>
           </div>

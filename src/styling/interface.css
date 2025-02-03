@@ -99,14 +99,14 @@ html{
   }
  }
  .directMessages{
-  width: 100dvw;
-  /* padding-left: 1rem; */
+  /* width: 100dvw; */
+  /* padding-right: 1rem; */
+  /* padding-right: 1rem; */
 
   .messages{
-   padding: 1rem 1rem 1rem 0.75rem;
-   margin: 0 -1rem 0 0;
+   padding: 1rem;
    display: flex;
-   width: 100dvw;
+   width: 100vw;
    gap: 10px;
    align-items: center;
 
@@ -119,7 +119,16 @@ html{
     background-color: grey;
    }
   }  
+ 
  }
+ .details{
+  width: 100%;
+}
+.nameTimeFlexContainer{
+ display: flex;
+ padding-bottom: 0.5rem; 
+ justify-content: space-between;
+}
  .unread{
   background-color: green;
   color: white;
@@ -133,7 +142,7 @@ html{
   border-radius: 10px;
   width: 5rem;
   bottom: 7rem;
-  left: 17rem;
+  left: 16rem;
  }
 
  /* status page styling */

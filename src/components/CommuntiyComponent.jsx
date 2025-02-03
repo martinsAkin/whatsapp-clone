@@ -59,13 +59,13 @@ export function IndividualCommunity({communityDp, communityName, general = 'Anno
        </div>
         <div className="community-List">
             <img src={communityDp} id='profilePic' alt="user" />
-            <div>
-              <div style={{display: 'flex', paddingBottom: '0.5rem', width: '18.5rem', justifyContent: 'space-between'}}>
+            <div className='details'>
+              <div className='nameTimeFlexContainer'>
                 <div>{general}</div>
                 <div>{time}</div>
                 </div>
 
-              <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+              <div className='nameTimeFlexContainer'>
                   <div>{children}</div>
                   <div className="unread">{unread}</div>
                 </div>
@@ -75,13 +75,13 @@ export function IndividualCommunity({communityDp, communityName, general = 'Anno
 
         <div className="community-List">
             <img src={communityDp} id='profilePic' alt="user" />
-            <div>
-              <div style={{display: 'flex', paddingBottom: '0.5rem', width: '18.5rem', justifyContent: 'space-between'}}>
+            <div className='details'>
+              <div className='nameTimeFlexContainer'>
                 <div>{group1}</div>
                 <div>{time}</div>
                 </div>
 
-              <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+              <div className='nameTimeFlexContainer'>
                   <div>{children}</div>
                   <div className="unread">{unread}</div>
                 </div>
@@ -90,13 +90,13 @@ export function IndividualCommunity({communityDp, communityName, general = 'Anno
 
      <div className="community-List">
             <img src={communityDp} id='profilePic' alt="user" />
-            <div>
-              <div style={{display: 'flex', paddingBottom: '0.5rem', width: '18.5rem', justifyContent: 'space-between'}}>
+            <div className='details'>
+              <div className='nameTimeFlexContainer'>
                 <div>{group2}</div>
                 <div>{time}</div>
                 </div>
 
-              <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+              <div className='nameTimeFlexContainer'>
                   <div>{children}</div>
                   {/* <div className="unread">{unread}</div> */}
                 </div>

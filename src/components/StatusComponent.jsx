@@ -57,13 +57,13 @@ export function ChannelList({channelPP, channelName, time = '9:40am', unread, ch
     <section id='channels'>
         <div className="channel-List">
             <img src={channelPP} id='profilePic' alt="user" />
-            <div>
-              <div style={{display: 'flex', paddingBottom: '0.5rem', width: '18.5rem', justifyContent: 'space-between'}}>
+            <div className='details'>
+              <div className='nameTimeFlexContainer'>
                 <div>{channelName}</div>
                 <div>{time}</div>
                 </div>
 
-              <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+              <div className='nameTimeFlexContainer'>
                   <div>{children}</div>
                   <div className="unread">{unread}</div>
                 </div>
