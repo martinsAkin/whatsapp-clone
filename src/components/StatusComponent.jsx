@@ -114,19 +114,19 @@ export default function Status() {
       <span>DOGE to MARS?</span>
     </ChannelList>
     <ChannelList channelName={'Learn at your pace'} channelPP={userImage2}>
-      <span>Worried about Imposter Syndrome?</span>
+      <span>Imposter Syndrome?</span>
     </ChannelList>
     <ChannelList channelName={'Cooking with Kya'} channelPP={userImage3}>
-      <span>20 food recipies you should try in 2025</span>
+      <span>2025 top recipies</span>
     </ChannelList>
     <ChannelList channelName={'90min | Liverpool'} channelPP={userImage2}>
       <span>Bournemouth 0: 2 Liverpool</span>
     </ChannelList>
     <ChannelList channelName={'Aproko Doctor'} channelPP={userImage5}>
-      <span>Why you should drink water everyday</span>
+      <span>Alcohol vs Beer</span>
     </ChannelList>
     <ChannelList channelName={'Naija News'} channelPP={userImage3}>
-      <span>Which Way Forward Nigeria?</span>
+      <span>October 1st, 1960</span>
     </ChannelList>
 
      <div className='addNewIcon status'>

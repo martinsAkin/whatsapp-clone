@@ -11,54 +11,6 @@ import menuIcon from '../assets/images/ellipsis-v (1).svg'
 import { useState } from 'react'
 
 
-// export function MenuBar({icon}){
-
-//   const [MenuBtn, setMenuBtn] = useState(false)
-
-//   const toggleMenu = () =>{
-//     setMenuBtn(!MenuBtn)
-//   }
-
-//   return(
-//     <>
-//         <div onClick={toggleMenu}>{icon}</div>
-
-//          <div style={{display: MenuBtn ? 'block' : 'none'}} className='menu-popUp'>
-//       <ul>
-//         <li>Settings</li>
-//       </ul>
-//     </div> 
-
-
-//     </>
-//   )
-// }
-
-
-
-
-// export function HeadbarChannels({section, Headericon1}){
-//   const header = document.getElementById('headbar-nav')
-//   window.addEventListener('scroll', ()=>{
-//     if (window.scrollY > 0) {
-//       header.style.boxShadow = '0 4px 6px rgba(8, 8, 8, 0.89)';
-//     } else{
-//       header.style.boxShadow = 'none'
-//     }
-//   })
-  
-
-//  return(
-//   <div id='headbar-nav'>
-//       <div style={{fontSize: '35px'}}>{section}</div>
-//       <div>
-//          <MenuBar icon={'menu'} />
-//       </div>
-
-//   </div>
-//  )
-// }
-
 export function HeadbarChannels({section}){
   const header = document.getElementById('headbar-nav')
   window.addEventListener('scroll', ()=>{
@@ -86,10 +38,6 @@ export function HeadbarChannels({section}){
 
                 <div style={{display: MenuBtn ? 'block' : 'none'}} className='menu-popUp'>
                 <ul>
-                  {/* <li>New group</li>
-                  <li>New broadcast</li>
-                  <li>Linked devices</li>
-                  <li>Starred messages</li> */}
                   <li>Settings</li>
                 </ul>
               </div>
@@ -171,15 +119,15 @@ export default function Community(){
     
     </div>
 
-    <IndividualCommunity communityDp={userImage} communityName={'JavaScript Resources Only'} group1={'Memes.js'} group2={'JAVASCRIPT'} unread={'28'}>
-       <span>Lorem ipsum dolor sit, amet consectetur</span>
+    <IndividualCommunity communityDp={userImage} communityName={'JavaScript Only'} group1={'Memes.js'} group2={'JAVASCRIPT'} unread={'28'}>
+       <span>Lorem ipsum dolor sit</span>
     </IndividualCommunity>
     <IndividualCommunity communityDp={userImage} communityName={'TENNET TEAM'} group1={'Discussion Group'} group2={'FrontEnd Devs'} unread={'17'} time='2:20am'>
-       <span>Lorem ipsum dolor sit, amet consectetur</span>
+       <span>Lorem ipsum dolor sit</span>
     </IndividualCommunity>
 
     <IndividualCommunity communityDp={userImage} communityName={'4Krativr'} group1={'General Group'} group2={'Front-End devs'} unread={'1'} time='10:40am'>
-       <span>Lorem ipsum dolor sit, amet consectetur</span>
+       <span>Lorem ipsum dolor sit</span>
     </IndividualCommunity>
 
   </div>
